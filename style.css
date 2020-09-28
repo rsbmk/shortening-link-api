@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+:root {
+  /*  ## Colors
+
+### Primary */
+  --whiteLetter: white;
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+
+  /* ### Secondary */
+
+  --Red: hsl(0, 87%, 67%);
+
+  /* ### Neutral */
+
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 10px auto;
+}
+#btn-menu {
+  font-size: 1.25em;
+  color: var(--Gray);
+}
+.header-wrpa-img-menu {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header-img {
+  width: 95vw;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  background: url(images/illustration-working.svg) no-repeat;
+  background-size: cover;
+}
+.menu {
+  display: none;
+  width: 90vw;
+  height: 50vh;
+  text-align: center;
+  padding: 35px 20px;
+  border-radius: 10px;
+  position: absolute;
+  color: var(--whiteLetter);
+  background-color: var(--DarkViolet);
+}
+.menu-options {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+.menu-option-tittle {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.toggleMenu {
+  display: block;
+}
+.btn-menu-header {
+  width: 100%;
+}
+.model-btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--whiteLetter);
+  border-radius: 40px;
+  background-color: var(--Cyan);
+}
+.paragraph-info {
+  margin: 30px 0;
+  text-align: center;
+}
+.tittle-two {
+  font-size: 2em;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.paragraphGray {
+  color: var(--Gray);
+  margin-bottom: 10px;
+}
+.shortenLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #3a3053 url(images/bg-shorten-mobile.svg) no-repeat;
+  background-position: right top;
+}
+.messageErr {
+  color: var(--Red);
+  font-size: 0.7em;
+  font-style: italic;
+  display: none;
+}
+
+.btnLink {
+  width: 80%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.wrap-errMessage {
+  width: 80%;
+  height: 20px;
+}
+.errLink input {
+  outline-color: var(--Red);
+  margin-bottom: 0px;
+}
+.errLink .messageErr {
+  display: block;
+}

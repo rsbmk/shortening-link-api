@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-tittle tittle">Shortly</h1>
+      <i id="btnMenu" class="fas fa-bars"></i>
+    </header>
+
+    <div class="header-wrpa-img-menu">
+      <div class="header-img"></div>
+      <nav class="menu" id="menu">
+        <div class="menu-options">
+          <h2 class="menu-option-tittle">Features</h2>
+          <h2 class="menu-option-tittle">Pricing</h2>
+          <h2 class="menu-option-tittle">Resources</h2>
+        </div>
+        <div>
+          <h2 class="menu-option-tittle">Login</h2>
+          <button class="btn-menu-header model-btn">Sign Up</button>
+        </div>
+      </nav>
+    </div>
+
+    <aside class="paragraph-info">
+      <h3 class="tittle-two">More than just shorter links</h3>
+      <p class="paragraphGray">
+        Build your brand’s recognition and get detailed insights on how your
+        links are performing.
+      </p>
+      <button class="model-btn">Get Started</button>
+    </aside>
+
+    <main id="shorenLink" class="shortenLink">
+      <input
+        id="inputLink"
+        class="btnLink"
+        type="text"
+        placeholder="Shorten a link here..."
+      />
+      <div class="wrap-errMessage">
+        <p class="messageErr">Please add a link</p>
+      </div>
+      <button id="btnShortenLink" class="model-btn btnLink">Shorten It!</button>
+    </main>
+
+    <article class="info-feture">
+      <div class="info-feature-first">
+        <h3 class="tittle info-feacture-tittle">Advanced Statistics</h3>
+        <p class="info-feature-paragraph">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <section class="info-cards">
+        <div class="card">
+          <div class="info-card-wrap-icon">
+            <img src="images/icon-brand-recognition.svg" alt="" />
+          </div>
+          <h3 class="tittle info-card-tittle">Brand Recognition</h3>
+          <p class="info-card-paragraph">
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="card">
+          <div class="info-card-wrap-icon">
+            <img src="images/icon-detailed-records.svg" alt="" />
+          </div>
+          <h3 class="tittle info-card-tittle">Detailed Records</h3>
+          <p class="info-card-paragraph">
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="card">
+          <div class="info-card-wrap-icon">
+            <img src="images/icon-fully-customizable.svg" alt="" />
+          </div>
+          <h3 class="tittle info-card-tittle">Fully Customizable</h3>
+          <p class="info-card-paragraph">
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <aside class="invitation">
+      <h3 class="invitation-tittle">Boost your links today</h3>
+      <button class="model-btn">Get Started</button>
+    </aside>
+
+    <footer class="footer-end">
+      <h4 class="footer-end-tittle">Shortly</h4>
+      <div class="footer-info">
+        <h5 class="footer-info-tittle">Features</h5>
+        <p class="footer-info-paragraph">Link Shortening</p>
+        <p class="footer-info-paragraph">Branded Links</p>
+        <p class="footer-info-paragraph">Analytics</p>
+      </div>
+      <div class="footer-info">
+        <h5 class="footer-info-tittle">Resources</h5>
+        <p class="footer-info-paragraph">Blog</p>
+        <p class="footer-info-paragraph">Developers</p>
+        <p class="footer-info-paragraph">Support</p>
+      </div>
+      <div class="footer-info">
+        <h5 class="footer-info-tittle">Company</h5>
+        <p class="footer-info-paragraph">About</p>
+        <p class="footer-info-paragraph">Our Team</p>
+        <p class="footer-info-paragraph">Careers</p>
+        <p class="footer-info-paragraph">Contact</p>
+      </div>
+      <div class="footer-socail">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
